@@ -1,0 +1,59 @@
+
+\usepackage[backend=biber,sorting=none]{biblatex}
+\renewbibmacro{in:}{}
+\setlength\bibitemsep{1.5\itemsep}
+\renewcommand*{\bibfont}{\footnotesize}
+\addbibresource{refbase.bib}
+
+\usepackage{lipsum} % Package to generate dummy text throughout this template
+
+\usepackage{csquotes} % babel brazil dependency
+\usepackage[brazil]{babel} % pt-BR silabic separations
+\usepackage[sc]{mathpazo} % Use the Palatino font
+\usepackage[fleqn]{amsmath} % math symbols
+\usepackage{lmodern} % fonts
+\usepackage{pifont} % fonts
+\linespread{1.05} % Line spacing - Palatino needs more space between lines
+\usepackage{microtype} % Slightly tweak font spacing for aesthetics
+
+\usepackage[hmarginratio=1:1,top=32mm,columnsep=20pt]{geometry} % Document margins
+\usepackage{multicol} % Used for the two-column layout of the document
+\usepackage[small,labelfont=bf,up,textfont=it,up]{caption} % Custom captions under/above floats in tables or figures
+\usepackage{booktabs} % Horizontal rules in tables
+\usepackage{float} % Required for tables and figures in the multi-column environment - they need to be placed in specific locations with the [H] (e.g. \begin{table}[H])
+\usepackage{hyperref} % For hyperlinks in the PDF
+\usepackage{graphicx}
+
+\usepackage{lettrine} % The lettrine is the first enlarged letter at the beginning of the text
+\usepackage{GoudyIn}
+\usepackage[x11names]{xcolor}
+\renewcommand{\LettrineFontHook}{\GoudyInfamily{}}
+\LettrineTextFont{\itshape}
+\setcounter{DefaultLines}{3}
+
+\usepackage{paralist} % Used for the compactitem environment which makes bullet points with less space between them
+
+\usepackage{abstract} % Allows abstract customization
+\renewcommand{\abstractnamefont}{\normalfont\bfseries} % Set the "Abstract" text to bold
+\renewcommand{\abstracttextfont}{\normalfont\small\itshape} % Set the abstract itself to small italic text
+
+\usepackage{titlesec} % Allows customization of titles
+\renewcommand\thesection{\Roman{section}} % Roman numerals for the sections
+\renewcommand\thesubsection{\Roman{subsection}} % Roman numerals for subsections
+\titleformat{\section}[block]{\large\scshape\centering}{\thesection.}{1em}{} % Change the look of the section titles
+\titleformat{\subsection}[block]{\large}{\thesubsection.}{1em}{} % Change the look of the section titles
+
+\usepackage{nameref} % ref sections on text
+\makeatletter
+\newcommand*{\currentname}{\@currentlabelname}
+\makeatother
+
+\usepackage{fancyhdr} % Headers and footers
+\pagestyle{fancy} % All pages have headers and footers
+\fancyhead{} % Blank out the default header
+\fancyfoot{} % Blank out the default footer
+\fancyhead[C]{Reconhecimento de Locutor via Rede Neural Artificial {\footnotesize \ding{118}} \currentname} % Custom header text
+\fancyfoot[RO,LE]{\thepage} % Custom footer text
+
+\renewcommand{\figurename}{Figura}
+\renewcommand{\tablename}{Tabela}

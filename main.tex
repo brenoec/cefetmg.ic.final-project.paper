@@ -1,0 +1,26 @@
+
+\documentclass[twoside, hidelinks]{article}
+
+\input{./texfiles/preamble.tex}
+\input{./texfiles/title.tex}
+
+\begin{document}
+
+\maketitle % Insert title
+\thispagestyle{empty} % All pages after page 1 have headers and footers
+
+\input{./sections/000-Resumo.tex}
+
+\begin{multicols*}{2} % Two-column layout throughout the main article text
+\newpage
+
+\input{./sections/010-Introduction.tex}
+\input{./sections/020-Methodology.tex}
+\input{./sections/030-Results.tex}
+\input{./sections/040-ThreatsToValidity.tex}
+\input{./sections/050-Conclusion.tex}
+
+\printbibliography
+
+\end{multicols*}
+\end{document}

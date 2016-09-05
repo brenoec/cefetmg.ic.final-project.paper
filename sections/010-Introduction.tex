@@ -1,0 +1,43 @@
+
+\section{Introdução}
+
+\lettrine{O}{} reconhecimento de locutor por meio automático é um campo de estudo
+tecnológico que desde o surgimento das maquinas, sempre fez parte das aspirações
+humanas. Isto se deve às facilidades inerentes a sistemas capazes de obter êxito
+nessa tarefa, tais como fazer com que um computador identifique seu dono através
+da fala, o controle de e robôs e maquinas em uma linha de montagem, sem a
+necessidade de entradas codificadas ou linguagens específicas e de difícil
+acesso aos seres humanos.
+
+As redes neurais artificiais (RNAs) são aliadas neste sentido, pois através
+delas é possível implementar modelos de reconhecimento de locutor e tornar
+viável inúmeras outras comodidades resultantes deste tipo de aplicação. Existem
+alguns registros na literatura sobre aplicações para as técnicas de
+reconhecimento de locutor como, por exemplo, o auxílio a portadores de
+deficiência \cite{Neto:2010:ReconhecimentoVozCadeiraRodas}
+\cite{Thiang:2007:SpeechRecognitionWheelchair}, aplicações na prática forense
+\cite{Cardoso:2001:InteligenciaArtificialJudiciario} e automação de ambientes
+\cite{Amaral:2004:ReconhecimentoVozAutomaçãoInteligente}.
+
+Por outro lado, verifica-se a inexistência de grande diversidade na literatura
+da área, visto que os sistemas que permitem uma comunicação mais natural entre
+homem e máquina ainda não estejam plenamente dominados
+\cite{Neto:2010:ReconhecimentoVozCadeiraRodas}.
+
+Esse trabalho busca demonstrar através de uma abordagem prática, a aplicação de
+reconhecimento de locutor através de uma rede projetada e analisada para este
+fim. Para isto, serão selecionados pequenos trechos de áudios tratados e
+encaminhados à rede para que sejam classificados pela mesma.
+
+A rede neural artificial em questão deve ser capaz de reconhecer a voz de
+determinado locutor dentre um numero de locutores aleatórios. Ruídos serão
+incrementados aos áudios a fim de oferecer maior poder de generalização. A soma
+ruído e áudio passa pelo mesmo processo de tratamento que o áudio original.
+
+O restante do artigo está organizado de forma direta, com metodologia,
+resultados, ameaças à validade e conclusão.
+
+A seção 2 aborda com detalhes a metodologia de trabalho, com ênfase na aquisição
+e manipulação dos dados de entrada. Se expõe como que informações referentes aos
+áudios de entrada são utilizadas como entrada da rede projetada. A arquitetura
+da rede é brevemente discutida.
